@@ -9,6 +9,7 @@ const HeroSection = () => {
   useEffect(() => {
     document.addEventListener("mousemove", Parallax);
   }, []);
+  
   return (
     <>
       <div className="vid-container">
