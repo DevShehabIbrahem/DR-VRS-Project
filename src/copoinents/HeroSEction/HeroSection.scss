@@ -1,0 +1,60 @@
+.vid-container{
+    position: relative;
+    overflow: hidden;
+    
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .herosection{
+       height: 100vh;
+       a{
+        
+        display: flex;
+        padding: 0 20px;
+        justify-content: center;
+        
+       }
+    
+        img{
+            position: absolute;
+            right: -40px;
+            bottom: -20px;
+            width: 100%;
+            height: auto;
+            max-width: 320px;
+            object-fit: contain;
+            z-index: 2;
+           
+           
+        }
+  
+
+    }
+ 
+ }
+ 
+
+.noisebg::before{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+content: "";
+opacity: .05;
+z-index: 1000;
+pointer-events: none;
+background: url(/assest/Header/noise.gif);
+}
+
+
+
+
+
+
+    
