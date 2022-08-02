@@ -7,6 +7,7 @@ import "./Navbar.scss";
 const Navbar = () => {
   const Navelemnt = useRef();
 
+  // display Navbar in Scroll
   useEffect(() => {
     const scrollNav = () => {
       if (window.scrollY > Navelemnt.current?.offsetHeight) {

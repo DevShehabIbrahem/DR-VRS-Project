@@ -1,0 +1,87 @@
+@import "../../common/styles.scss";
+
+.night {
+    padding: $--main-Container;
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: calc(-0.3rem + 8vw);
+        font-family: $--Familyfonts-titls;
+        color: $--Second-Color;
+    }
+    .night__feed {
+        display: flex;
+        justify-content: space-around
+        ; img{
+            max-width: 400px;
+           
+              flex: 1 1;
+              transform: scale(0.9);
+          }
+        .night__feed_content{
+            flex: 2 2;
+            max-width: 400px;
+            color: $--fonts-color;
+            font-family: $--Familyfonts-miniFonts;
+            font-weight: 500;
+            h3{
+                font-size: 2.2rem;
+                font-family: $--Familyfonts-LowerTitle;
+
+            }
+            p{
+                margin-bottom: 22px ;
+               
+                font-weight: 600;
+                line-height: 20px;
+                
+    font-size: 12px;
+    font-family: $--Familyfonts-miniFonts;
+            }
+            h6{
+                color: $--Second-Color;
+                font-style: italic;
+                font-family: $--Familyfonts-miniFonts;
+            }
+            button{
+               
+                box-shadow: -2px -2px 11px rgba(96,114,140,.8),3px 6px 10px rgba(1,5,11,.8);
+                padding: 15px;
+                border-radius: 100px;
+                color: $--fonts-color;
+                font-weight: 900;
+                font-size: 12px;
+                background: transparent;
+                border: 0;
+                font-family: $--Familyfonts-miniFonts;
+cursor: pointer;
+            }
+
+        }
+       
+       
+    }
+}
+@media screen and (max-width:980px) {
+    .night{
+        .night__feed{
+            img{
+                transform: scale(1.1);
+                margin-bottom: 25px;
+             }
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .night__feed_content{
+                max-width: 550px;
+                text-align: center;
+                h3{
+                    font-size: 3rem;
+                }
+               
+            }
+        }
+       
+    }
+
+}
