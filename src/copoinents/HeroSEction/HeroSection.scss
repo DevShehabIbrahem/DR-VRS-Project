@@ -10,7 +10,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        
+
     }
     .herosection {
         height: 100vh;
@@ -37,17 +37,18 @@
             max-width: 320px;
             object-fit: contain;
             z-index: 2;
+
         }
     }
 }
 
 .noisebg::before {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    content: "";
     opacity: 0.05;
     z-index: 1000;
     pointer-events: none;
