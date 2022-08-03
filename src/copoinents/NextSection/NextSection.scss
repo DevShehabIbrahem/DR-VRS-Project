@@ -1,0 +1,102 @@
+@import "../../common/styles.scss";
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    margin-top: $--Margin-sections;
+    .next__feed {
+        background: url("../../assest/NightSection/road.7833a431.svg") center center no-repeat;
+        display: flex;
+        align-items: center;
+        border: 2px solid $--fonts-color;
+        border-radius: 20px;
+        height: 100vh;
+        margin: 0 1rem;
+        padding: $--main-Container;
+        overflow: hidden;
+        .next__video {
+            padding-right: 5rem;
+            height: 32rem;
+
+            flex: 1;
+        }
+
+        .next__info {
+            flex: 1;
+
+            font-family: $--Familyfonts-LowerTitle;
+            color: $--fonts-color;
+            font-weight: 900;
+            font-size: 1.8rem;
+            div {
+                margin-bottom: 4rem;
+                p {
+                    line-height: 20px;
+                }
+            }
+            div:nth-child(3) {
+                p {
+                    line-height: 32px;
+                }
+            }
+
+            span {
+                color: $--Second-Color;
+            }
+        }
+    }
+    .next__right {
+        flex: 1;
+
+        .next__svg {
+            width: 4rem;
+            margin-bottom: 19px;
+            svg {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .next {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        margin-top: $--Margin-sections;
+        .next__feed {
+            background: url("../../assest/NightSection/road.7833a431.svg") center center no-repeat;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1rem;
+
+            height: auto;
+
+            .next__video {
+                width: 100%;
+                padding: 0;
+
+                flex: 1;
+            }
+
+            .next__info {
+                div {
+                    p {
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        .next__right {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            gap: 3rem;
+            .next__svg {
+                width: 2.4rem;
+            }
+        }
+    }
+}

@@ -54,3 +54,36 @@
     pointer-events: none;
     background: url(/assest/Header/noise.gif);
 }
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .vid-container {
+     
+        
+        .herosection {
+           
+            Svg{
+                
+                width:380px;
+                height: 300px;
+            }
+          
+        }
+    }
+   
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .vid-container {
+     
+        
+        .herosection {
+           
+            Svg{
+                
+                width:700px;
+                height: 300px;
+            }
+          
+        }
+    }
+   
+}
