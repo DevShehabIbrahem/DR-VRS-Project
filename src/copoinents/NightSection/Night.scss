@@ -2,9 +2,7 @@
 
 .night {
     padding: $--main-Container;
-   ; 
-
-   h1 {
+    h1 {
         display: flex;
         justify-content: center;
         font-size: calc(-0.3rem + 8vw);
@@ -13,21 +11,21 @@
     }
     .night__feed {
         display: flex;
+        align-items: center;
         justify-content: space-around;
         img {
             max-width: 400px;
 
             flex: 1 1;
-            transform: scale(0.9);
         }
         .night__feed_content {
             flex: 2 2;
-            max-width: 400px;
+            max-width: 507px;
             color: $--fonts-color;
             font-family: $--Familyfonts-miniFonts;
             font-weight: 500;
             h3 {
-                font-size: 2.2rem;
+                font-size: 2.8rem;
                 font-family: $--Familyfonts-LowerTitle;
             }
             p {
@@ -52,7 +50,8 @@
                 font-size: 12px;
                 background: transparent;
                 border: 0;
-                font-family: $--Familyfonts-miniFonts;                cursor: pointer;
+                font-family: $--Familyfonts-miniFonts;
+                cursor: pointer;
                 position: relative;
                 width: 13rem;
                 font-weight: 900;
@@ -60,41 +59,54 @@
             }
         }
     }
-    
-    .night__alpha{
+
+    .night__alpha {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10rem;
-        a{
-            margin-top: 35px;
-            border: 13px solid $--Second-Color;
-            padding: 1rem 4rem;
-            font-size: 2rem;
-            font-weight: 900;
-            color: $--fonts-color;
-            font-family: $--Familyfonts-miniFonts;                cursor: pointer;
-            position: relative;
-            overflow: hidden;
+        margin-top: $--Margin-sections;
+        a {
+            text-decoration: none;
+            margin-top: 5rem;
             opacity: 0.5;
-            transition:  0.2s  ;
+            transition:  0.8s all linear;
 
-            &:hover{
-              opacity: 1;
-             border:0
+            &:hover {
+                opacity: 1;
+            }
+            span {
+               
+                
+                padding: 1rem 4rem;
+                font-size: 2rem;
+                font-weight: 900;
+                color: $--fonts-color;
+                font-family: $--Familyfonts-miniFonts;
+                position: relative;
+                overflow: hidden;
+                transition:  0.4s all linear ;
+                border: 13px solid $--Second-Color;    
+                &:hover {
+                    border: 8px solid $--Second-Color;    
+
+                }
             }
         }
     }
-   
 }
 
 @media screen and (max-width: 980px) {
     .night {
+        padding: 0 1rem;
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
         .night__feed {
             img {
-                transform: scale(1.1);
-                margin-bottom: 25px;
+                width: 270px;
+                margin-top: 2rem;
             }
             flex-direction: column;
             justify-content: center;
@@ -103,10 +115,9 @@
                 max-width: 550px;
                 text-align: center;
                 h3 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }
             }
         }
     }
-   
 }

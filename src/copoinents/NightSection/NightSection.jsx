@@ -40,7 +40,9 @@ const NightSection = () => {
       </div>
       <div className="night__alpha">
         <img src={alpha} alt="NightImage" />
-        <a>MINT</a>
+        <a href="##">
+          <span>MINT</span>
+        </a>
       </div>
     </div>
   );
