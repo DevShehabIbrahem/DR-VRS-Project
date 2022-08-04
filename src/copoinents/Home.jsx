@@ -2,6 +2,7 @@ import HeroSection from "./HeroSEction/HeroSection";
 import Navbar from "./Navbar/Navbar";
 import NextSection from "./NextSection/NextSection";
 import NightSection from "./NightSection/NightSection";
+import Roadmap from "./RoadMap/Roadmap";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HeroSection />
       <NightSection />
       <NextSection />
+      <Roadmap />
     </>
   );
 };

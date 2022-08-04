@@ -39,6 +39,7 @@ const NextSection = () => {
           ))}
         </div>
       </div>
+    
     </>
   );
 };
