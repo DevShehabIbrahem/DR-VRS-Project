@@ -1,0 +1,158 @@
+@import "../../common/styles.scss";
+
+.roadmap {
+    background: url("../../assest/Bike-RiderBgOffset4.4dcfb31f.png") no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    overflow: hidden;
+    padding: $--main-Container;
+
+    
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: calc(-0.3rem + 5vw);;
+        font-family: $--Familyfonts-titls;
+        color: $--Second-Color;
+    }
+    .roadmap__innercontent{
+        display: flex;
+        align-items: center;
+        
+        div{
+            max-width: 400px;
+            margin: 0 auto;
+            color: $--fonts-color;
+            font-family: $--Familyfonts-miniFonts;
+            font-weight: 600;
+            flex: 1 1;
+          p{
+            margin-bottom: 2rem;
+            line-height: 20px;
+          }
+
+        }
+       
+
+    }
+
+    .roadmap__phase{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-content: center;
+        gap: 4rem;
+        div{
+            h3{
+                
+                    display: flex;
+                    justify-content: center;
+                    font-size: calc(-0.3rem + 2.5vw);
+                    font-family: $--Familyfonts-titls;
+                    color: $--Second-Color;
+            }
+            p{
+                text-align: center;
+                line-height: 25px;
+                font-weight: 600;
+            }
+            max-width: 250px;
+            margin:  0 auto;
+            color: $--fonts-color;
+        }
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .roadmap {
+        background: url("../../assest/Bike-RiderBgOffset4.4dcfb31f.png") no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        overflow: hidden;
+        padding: 0 2rem;
+    
+        
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: calc(-0.3rem + 9vw);
+            font-family: $--Familyfonts-titls;
+            color: $--Second-Color;
+        }
+        .roadmap__innercontent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            div{
+                max-width: 500px;
+              
+                color: $--fonts-color;
+                font-family: $--Familyfonts-miniFonts;
+                font-weight: 600;
+                flex: 1 1;
+              p{
+                margin-bottom: 2rem;
+                line-height: 20px;
+              }
+    
+            }
+           
+    
+        }
+    
+        .roadmap__phase{
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            align-content: center;
+            gap: 4rem;
+            div{
+                h3{
+                    
+                        display: flex;
+                        justify-content: center;
+                        font-size:2rem;
+                        font-family: $--Familyfonts-titls;
+                        color: $--Second-Color;
+                }
+                p{
+                    text-align: center;
+                    line-height: 25px;
+                    font-weight: 600;
+                }
+                max-width: 500px;
+                margin:  0 auto;
+                color: $--fonts-color;
+            }
+            
+        }
+    }
+}
+@media (min-width: 769px) and (max-width:1000px){
+    .roadmap {
+        .roadmap__innercontent{
+           
+            flex-direction: column;
+       
+            
+            div{
+              max-width: 600px;
+              margin: 0 auto;
+                color: $--fonts-color;
+                font-family: $--Familyfonts-miniFonts;
+                font-weight: 600;
+                flex: 1 1;
+              p{
+                margin-bottom: 2rem;
+                line-height: 20px;
+              }
+    
+            }
+           
+    
+        }
+    }
+}
