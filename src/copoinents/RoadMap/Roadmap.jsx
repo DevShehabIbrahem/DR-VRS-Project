@@ -1,4 +1,4 @@
-import React from "react";
+import { useLayoutEffect, useEffect } from "react";
 import { leftside, phase, rightside } from "../../common/Words/Roadmap";
 import "./Roadmap.scss";
 const Roadmap = () => {

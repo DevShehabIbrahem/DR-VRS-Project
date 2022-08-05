@@ -11,14 +11,17 @@ export const Words = {
   nightSpan: "WINNERS DON'T USE REAR-VIEW MIRRORS",
   nightbutton: "Connect your Wallet",
   nightHover: "Coming Soon",
+
   next: [
     "THE NEXT STEP IN BRAND",
     "THE NEXT STEP IN COMMUNITY",
     "THE NEXT STEP IN IP OWNERSHIP",
     "THE NEXT STEP IN DEVOLUTION",
   ],
+
   next__DRIVE: "WE DRIVE CHANGE",
   next__FOUNDERS: "WE ARE THE NEW FOUNDERS",
   next__last: "HEAD DOWN, PREPARE FOR THE RACE...LFG",
   next__span: "#WEOWNTHENIGHT",
+  merch: "MERCH DROP",
 };

@@ -1,0 +1,104 @@
+@import "../../common/styles.scss";
+.merch {
+    display: flex;
+    border-bottom: 2px solid $--fonts-color;
+    border-top: 2px solid $--fonts-color;
+    margin-top: 35px;
+    .merch__right {
+        position: relative;
+        flex: 1;
+
+        background: url("../../assest/06_Hoodie-Mock-up-2_folded-front-side-2.167137bd.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        h3 {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            color: $--Second-Color;
+            font-family: $--Familyfonts-LowerTitle;
+            font-size: 45px;
+        }
+    }
+    .merch__leftside {
+        flex: 1;
+        border-right: 2px solid $--fonts-color;
+        .merch__tv {
+            height: 64vh;
+            width: calc(100% - 90px);
+            margin: 0 auto;
+            background: url("../../assest/tv-ez5.gif");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .merch__runtext {
+            border-bottom: 2px solid $--fonts-color;
+            overflow: hidden;
+            height: 82px;
+            .scroll-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem 0;
+                transform: translateX(-100%);
+                animation: textanimation 30.05s 0s linear infinite;
+
+                h5 {
+                    margin: 0;
+                    color: $--Second-Color;
+                    font-family: $--Familyfonts-LowerTitle;
+                    font-size: 42px;
+                }
+                @keyframes textanimation {
+                    from {
+                        transform: translateX(-100%);
+                    }
+                    to {
+                        transform: translateX(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .merch {
+        flex-direction: column;
+
+        .merch__right {
+            flex: auto;
+            height: 50vh;
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+        .merch__leftside {
+            .merch__runtext {
+                height: 63px;
+                .scroll-text {
+                    h5 {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1415px) {
+    .merch {
+        .merch__leftside {
+            .merch__runtext {
+                height: 63px;
+                .scroll-text {
+                    h5 {
+                        font-size: 29px;
+                    }
+                }
+            }
+        }
+    }
+}
