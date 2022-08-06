@@ -19,7 +19,7 @@ const NextSection = () => {
 
           <div className="next__info">
             <div>
-              {next.map((item) => (
+              {next.map((item, i) => (
                 <p>{item}</p>
               ))}
             </div>
@@ -39,7 +39,6 @@ const NextSection = () => {
           ))}
         </div>
       </div>
-    
     </>
   );
 };

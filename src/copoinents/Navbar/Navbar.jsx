@@ -24,7 +24,7 @@ const Navbar = () => {
   const NavLinks = () => (
     <ul>
       {Words.Navbar.map((li) => (
-        <li>{li}</li>
+        <li key={li}>{li}</li>
       ))}
     </ul>
   );
