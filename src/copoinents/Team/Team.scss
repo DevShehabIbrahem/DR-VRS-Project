@@ -9,9 +9,9 @@
 .team {
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 
     .team__cart {
         max-width: 280px;
