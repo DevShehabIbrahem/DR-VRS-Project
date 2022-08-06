@@ -15,7 +15,7 @@ export const Svg = [
     xmlns="http://www.w3.org/2000/svg"
     x="0"
     y="0"
-    enable-background="new 0 0 10.4 9.2"
+    enableBackground="new 0 0 10.4 9.2"
     version="1.1"
     viewBox="0 0 10.4 9.2"
   >
@@ -57,8 +57,8 @@ export const Svg = [
   >
     <path
       stroke="#EEEADA"
-      stroke-miterlimit="10"
-      stroke-width="2"
+      strokeMiterlimit="10"
+      strokeWidth="2"
       d="M45.742 92.806c24.542 0 44.437-19.906 44.437-44.46 0-24.556-19.895-44.462-44.437-44.462-24.543 0-44.438 19.906-44.438 44.461s19.895 44.461 44.438 44.461z"
     ></path>
     <path
