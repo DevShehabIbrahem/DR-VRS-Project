@@ -1,9 +1,10 @@
 @import "../../common/styles.scss";
 .Faq {
+    margin-top: 8rem;
     display: flex;
     border-bottom: 2px solid $--fonts-color;
     border-top: 2px solid $--fonts-color;
-    margin-top: 35px;
+
     .Faq__right {
         position: relative;
         flex: 1;
