@@ -48,3 +48,26 @@ export const Teamdata = [
     dec: "General comms and management of the team. Steady is an accomplished photographer and writer. She's also a yoga master who helps keep the team chill when discussing the state of the current NFT market.",
   },
 ];
+
+export const accordin = [
+  {
+    title: "WHAT IS THE MINT PRICE?",
+    dec: "THE MINT PRICE WILL BE REVEALED BEFORE LAUNCH.",
+  },
+  {
+    title: "WHAT IS THE MINT ALLOWANCE?",
+    dec: "MINT ALLOWANCE TO BE REVEALED",
+  },
+  {
+    title: "When launch?",
+    dec: "FOLLOW OUR TWITTER ACCOUNT FOR LAUNCH DATE & DR/VRS INFO.",
+  },
+  {
+    title: "IS THIS JUST ANOTHER PFP?",
+    dec: "NO, WATCH THIS SPACE AS WE BUILD OUT A DECENTRALISED BRAND FOR THE FUTURE.",
+  },
+  {
+    title: "Community?",
+    dec: "THE MOST IMPORTANT PART OF THE PROJECT, COMMUNITY AT ITS CORE.",
+  },
+];

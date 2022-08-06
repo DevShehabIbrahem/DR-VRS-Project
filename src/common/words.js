@@ -24,4 +24,5 @@ export const Words = {
   next__last: "HEAD DOWN, PREPARE FOR THE RACE...LFG",
   next__span: "#WEOWNTHENIGHT",
   merch: "MERCH DROP",
+  FAQ: "F . A . Q",
 };

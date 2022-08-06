@@ -1,6 +1,7 @@
 @import "../../common/styles.scss";
 
 .team_title {
+    margin-top: 10rem;
     color: $--Second-Color;
     text-align: center;
     font-size: calc(-0.3rem + 5vw);
@@ -8,6 +9,7 @@
 }
 .team {
     padding: 0 2rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: center;
