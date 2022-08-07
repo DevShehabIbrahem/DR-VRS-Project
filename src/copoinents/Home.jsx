@@ -1,4 +1,5 @@
 import Faq from "./FAQ/Faq";
+import Footer from "./Footer/Footer";
 import HeroSection from "./HeroSEction/HeroSection";
 import Merch from "./merch/Merch";
 import Navbar from "./Navbar/Navbar";
@@ -19,6 +20,7 @@ const Home = () => {
       <Merch />
       <Team />
       <Faq />
+      <Footer />
     </>
   );
 };
