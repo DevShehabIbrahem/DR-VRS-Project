@@ -18,7 +18,7 @@ const HeroSection = () => {
         </video>
 
         <div className="herosection">
-          <Svg width={"1000px"} height={"393px"} layer={"layer"} />
+          <Svg layer={"layer"} />
           <img src={gangSmall} alt="" className="layer" data-speed="1" />
         </div>
       </div>
