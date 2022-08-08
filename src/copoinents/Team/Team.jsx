@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Teamdata } from "../../data";
-import "./Team.scss";
-import { useSpring, animated } from "react-spring";
+import "../../css/Team/Team.css";
 
 const Team = () => {
   const [show, setShow] = useState({});
@@ -11,10 +10,11 @@ const Team = () => {
   };
 
   //accordin animation
-
   return (
     <>
-      <h3 className="team_title">PIT TEAM</h3>
+      <div className="team_title">
+        <h2>PIT TEAM</h2>
+      </div>
 
       <div className="team">
         {Teamdata.map((cart, i) => (

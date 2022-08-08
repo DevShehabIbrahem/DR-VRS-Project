@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import gangSmall from "../../assest/Header/gangSmall.png";
 import VId from "../../assest/Header/1.mp4";
 import useParallax from "../../hooks/useParallax";
-import "./HeroSection.scss";
+import "../../css/HeroSEction/HeroSection.css";
 import Svg from "../../common/Svg";
 const HeroSection = () => {
   const Parallax = useParallax();

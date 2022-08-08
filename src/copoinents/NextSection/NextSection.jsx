@@ -1,7 +1,7 @@
 import React from "react";
 import { Svg } from "../../assest/Svg";
 import { Words } from "../../common/words";
-import "./NextSection.scss";
+import "../../css/NextSection/NextSection.css";
 import VId from "../../assest/NightSection/FINAL.mp4";
 
 const NextSection = () => {
@@ -19,8 +19,8 @@ const NextSection = () => {
 
           <div className="next__info">
             <div>
-              {next.map((item, i) => (
-                <p>{item}</p>
+              {next.map((item) => (
+                <p key={item}>{item}</p>
               ))}
             </div>
             <div>

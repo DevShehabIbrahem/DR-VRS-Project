@@ -2,10 +2,12 @@
 
 .team_title {
     margin-top: 10rem;
-    color: $--Second-Color;
     text-align: center;
-    font-size: calc(-0.3rem + 5vw);
-    font-family: $--Familyfonts-titls;
+    h2 {
+        color: $--Second-Color;
+        font-size: calc(1rem + 5vw);
+        font-family: $--Familyfonts-titls;
+    }
 }
 .team {
     padding: 0 2rem;

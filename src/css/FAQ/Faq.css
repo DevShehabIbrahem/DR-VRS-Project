@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&&display=swap");
+.Faq {
+  margin-top: 8rem;
+  display: flex;
+  border-bottom: 2px solid #eeeada;
+  border-top: 2px solid #eeeada;
+}
+.Faq .Faq__right {
+  position: relative;
+  flex: 1;
+  background: url("../../assest/driveForYourLife.df10bbab.svg");
+  background-size: calc(100% - 200px);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Faq .Faq__right h3 {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  color: #d46c68;
+  font-family: Impact, sans-serif;
+  font-size: 45px;
+}
+.Faq .Faq__leftside {
+  flex: 1;
+  border-right: 2px solid #eeeada;
+}
+.Faq .Faq__leftside .Faq__accordin ul {
+  list-style: none;
+  margin: 0;
+}
+.Faq .Faq__leftside .Faq__accordin ul li {
+  display: flex;
+  margin: 12px 0;
+  flex-direction: column;
+}
+.Faq .Faq__leftside .Faq__accordin ul li .Faq__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.Faq .Faq__leftside .Faq__accordin ul li .Faq__title span {
+  color: #d46c68;
+  font-size: 38px;
+}
+.Faq .Faq__leftside .Faq__accordin ul li .Faq__title h3 {
+  margin: 0;
+  color: #eeeada;
+  font-size: 28px;
+  font-weight: 800;
+}
+.Faq .Faq__leftside .Faq__accordin ul li .Faq__info p {
+  transition: 0.5s ease-in;
+  opacity: 0;
+  margin: 0;
+  color: #eeeada;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 18px;
+  margin: 18px 0;
+}
+.Faq .Faq__leftside .Faq__accordin ul li .Faq__info .show {
+  opacity: 1;
+}
+.Faq .Faq__leftside .Faq__runtext {
+  border-bottom: 2px solid #eeeada;
+}
+.Faq .Faq__leftside .Faq__runtext .Faq-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.Faq .Faq__leftside .Faq__runtext .Faq-text h5 {
+  margin: 0;
+  color: #d46c68;
+  font-family: Impact, sans-serif;
+  font-size: 51px;
+}
+
+@media (max-width: 768px) {
+  .Faq {
+    flex-direction: column;
+  }
+  .Faq .Faq__right {
+    flex: auto;
+    height: 41vh;
+    background-size: calc(15.2rem + 25px);
+  }
+  .Faq .Faq__right h3 {
+    font-size: 30px;
+  }
+  .Faq .Faq__leftside .Faq__accordin {
+    padding: 0 18px;
+  }
+  .Faq .Faq__leftside .Faq__accordin ul {
+    padding: 0;
+  }
+  .Faq .Faq__leftside .Faq__accordin ul li .Faq__title h3 {
+    font-size: 21px;
+  }
+  .Faq .Faq__leftside .Faq__accordin ul li .Faq__title span {
+    font-size: 25px;
+  }
+  .Faq .Faq__leftside .Faq__accordin ul li .Faq__info p {
+    font-size: 15px;
+  }
+  .Faq .Faq__leftside .Faq__runtext {
+    height: 63px;
+  }
+  .Faq .Faq__leftside .Faq__runtext .Faq-text h5 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1415px) {
+  .Faq .Faq__right {
+    flex: auto;
+    height: 70vh;
+    background-size: calc(100% - 50px);
+  }
+  .Faq .Faq__leftside .Faq__runtext {
+    height: 63px;
+  }
+  .Faq .Faq__leftside .Faq__runtext .Faq-text h5 {
+    font-size: 29px;
+  }
+  .Faq .Faq__leftside .Faq__accordin {
+    padding: 0 12px;
+  }
+  .Faq .Faq__leftside .Faq__accordin ul li .Faq__title h3 {
+    font-size: 20px;
+  }
+  .Faq .Faq__leftside .Faq__accordin ul li .Faq__title span {
+    font-size: 25px;
+  }
+  .Faq .Faq__leftside .Faq__accordin ul li .Faq__info p {
+    font-size: 15px;
+  }
+  .Faq .Faq__leftside .Faq__runtext {
+    height: 63px;
+  }
+  .Faq .Faq__leftside .Faq__runtext .Faq-text h5 {
+    font-size: 25px;
+  }
+}

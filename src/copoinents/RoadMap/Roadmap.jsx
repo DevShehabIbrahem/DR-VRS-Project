@@ -1,6 +1,6 @@
 import { useLayoutEffect, useEffect } from "react";
 import { leftside, phase, rightside } from "../../common/Words/Roadmap";
-import "./Roadmap.scss";
+import "../../css/RoadMap/Roadmap.css";
 const Roadmap = () => {
   const { textTow, textone, textthree } = leftside;
   const { text1, text2, text3, title } = rightside;

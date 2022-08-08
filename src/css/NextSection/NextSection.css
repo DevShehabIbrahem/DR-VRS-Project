@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&&display=swap");
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-top: 10rem;
+}
+.next .next__feed {
+  background: url("../../assest/NightSection/road.7833a431.svg") center center no-repeat;
+  display: flex;
+  align-items: center;
+  border: 2px solid #eeeada;
+  border-radius: 20px;
+  height: 100vh;
+  margin: 0 1rem;
+  padding: 0 4rem;
+  overflow: hidden;
+}
+.next .next__feed .next__video {
+  padding-right: 5rem;
+  height: 32rem;
+  flex: 1;
+}
+.next .next__feed .next__info {
+  flex: 1;
+  font-family: Impact, sans-serif;
+  color: #eeeada;
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+.next .next__feed .next__info div {
+  margin-bottom: 4rem;
+}
+.next .next__feed .next__info div p {
+  line-height: 20px;
+}
+.next .next__feed .next__info div:nth-child(3) p {
+  line-height: 32px;
+}
+.next .next__feed .next__info span {
+  color: #d46c68;
+}
+.next .next__right {
+  flex: 1;
+}
+.next .next__right .next__svg {
+  width: 4rem;
+  margin-bottom: 19px;
+}
+.next .next__right .next__svg svg {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .next {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    margin-top: 10rem;
+  }
+  .next .next__feed {
+    background: url("../../assest/NightSection/road.7833a431.svg") center center no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    height: auto;
+  }
+  .next .next__feed .next__video {
+    width: 100%;
+    padding: 0;
+    flex: 1;
+  }
+  .next .next__feed .next__info div p {
+    line-height: 30px;
+  }
+  .next .next__right {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+  .next .next__right .next__svg {
+    width: 2.4rem;
+  }
+}

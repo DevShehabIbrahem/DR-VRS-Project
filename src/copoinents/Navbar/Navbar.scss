@@ -1,43 +1,62 @@
 @import "../../common/styles.scss";
-.Scrolled{
+.Scrolled {
     transform: translateY(0);
-
 }
-nav{
+nav {
     position: fixed;
-   transform: translateY(-140px);
+    transform: translateY(-140px);
     z-index: 100;
     width: 100%;
     padding: 5px;
     background-color: $--color-Main;
     border-bottom: 3px solid $--Second-Color;
     transition: 0.5s all ease;
-    .wrraper{
+    .wrraper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 8px 30px;
-       .leftSide{
-        display: flex;
-           ul{
-               display: flex;
-               align-items: center;
-               justify-items: center;
-               gap: 1.5rem;
-               text-transform: capitalize;
-               list-style: none;
-               ;
-               li{
-                  
-                   color: $--Second-Color;
-                   &:hover{
-                       cursor: pointer;
-                   }
-               }
-           }
-       }
-       img{
-        width: 70px;
-       }
+        Svg {
+            font-size: 2rem;
+            color: $--fonts-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .leftSide {
+            display: flex;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                gap: 1.5rem;
+                text-transform: capitalize;
+                list-style: none;
+                li {
+                    color: $--Second-Color;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        img {
+            width: 70px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .wrraper {
+        img {
+            display: none;
+        }
+        Svg {
+            display: flex;
+        }
+        .leftSide {
+            ul {
+                display: none !important;
+            }
+        }
     }
 }

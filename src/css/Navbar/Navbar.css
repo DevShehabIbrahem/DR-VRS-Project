@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&&display=swap");
+.Scrolled {
+  transform: translateY(0);
+}
+
+nav {
+  position: fixed;
+  transform: translateY(-140px);
+  z-index: 100;
+  width: 100%;
+  padding: 5px;
+  background-color: #252525;
+  border-bottom: 3px solid #d46c68;
+  transition: 0.5s all ease;
+}
+nav .wrraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px;
+}
+nav .wrraper Svg {
+  font-size: 2rem;
+  color: #eeeada;
+}
+nav .wrraper Svg:hover {
+  cursor: pointer;
+}
+nav .wrraper .leftSide {
+  display: flex;
+}
+nav .wrraper .leftSide ul {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 1.5rem;
+  text-transform: capitalize;
+  list-style: none;
+}
+nav .wrraper .leftSide ul li {
+  color: #d46c68;
+}
+nav .wrraper .leftSide ul li:hover {
+  cursor: pointer;
+}
+nav .wrraper img {
+  width: 70px;
+}
+
+@media (max-width: 900px) {
+  .wrraper img {
+    display: none;
+  }
+  .wrraper Svg {
+    display: flex;
+  }
+  .wrraper .leftSide ul {
+    display: none !important;
+  }
+}

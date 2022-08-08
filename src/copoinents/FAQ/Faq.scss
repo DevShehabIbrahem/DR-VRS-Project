@@ -93,7 +93,8 @@
 
         .Faq__right {
             flex: auto;
-            height: 60vh;
+            height: 41vh;
+            background-size: calc(15.2rem - -25px);
 
             h3 {
                 font-size: 30px;
@@ -103,6 +104,7 @@
             .Faq__accordin {
                 padding: 0 18px;
                 ul {
+                    padding: 0;
                     li {
                         .Faq__title {
                             h3 {

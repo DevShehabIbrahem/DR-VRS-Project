@@ -2,7 +2,7 @@ import { useState } from "react";
 import NightImage from "../../assest/NightSection/racePermit.gif";
 import alpha from "../../assest/NightSection/countdown.png";
 import { Words } from "../../common/words";
-import "./Night.scss";
+import "../../css/NightSection/Night.css";
 
 const NightSection = () => {
   const [onhover, setOnhover] = useState(false);

@@ -1,6 +1,5 @@
 import React from "react";
-import Tv from "../../assest/tv-ez5.gif";
-import "./merch.scss";
+import "../../css/merch/merch.css";
 import { Words } from "../../common/words";
 
 const Merch = () => {

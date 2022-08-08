@@ -1,13 +1,13 @@
 import { useState } from "react";
-import "./Faq.scss";
+import "../../css/FAQ/Faq.css";
 import { Words } from "../../common/words";
 import { accordin } from "../../data";
 import { BiPlusMedical } from "react-icons/bi";
 import { FaMinus } from "react-icons/fa";
+
 const Faq = () => {
   const { FAQ } = Words;
   const [accor, setAccor] = useState({});
-  console.log(accor);
   const accorr = (index) => {
     setAccor({ ...accor, [index]: !accor[index] });
   };
@@ -21,9 +21,9 @@ const Faq = () => {
           </div>
         </div>
         <div className="Faq__accordin">
-          {accordin.map(({ dec, title }, i) => (
-            <ul>
-              <li>
+          <ul>
+            {accordin.map(({ dec, title }, i) => (
+              <li key={title}>
                 <div className="Faq__title">
                   <span onClick={() => accorr(i)}>
                     {accor[i] ? <FaMinus /> : <BiPlusMedical />}
@@ -34,8 +34,8 @@ const Faq = () => {
                   <p className={accor[i] ? "show" : ""}>{dec}</p>
                 </div>
               </li>
-            </ul>
-          ))}
+            ))}
+          </ul>
         </div>
       </div>
       <div className="Faq__right"></div>

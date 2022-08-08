@@ -1,12 +1,17 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Svg from "../../common/Svg";
 import Conenct from "../../assest/connectWallet.svg";
-import { Words } from "../../common/words";
-import "./Navbar.scss";
+import "../../css/Navbar/Navbar.css";
+import MobileMenu from "../mobileMenu/MobileMenu";
+import NavLinks from "../../common/NavLinks";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const Navelemnt = useRef();
-
+  const [menu, setMenu] = useState(false);
+  const HanldleMobile = () => {
+    setMenu(true);
+  };
   // display Navbar in Scroll
   useEffect(() => {
     const scrollNav = () => {
@@ -21,24 +26,29 @@ const Navbar = () => {
   }, []);
 
   // Sub Coponent Return => NavLinks
-  const NavLinks = () => (
-    <ul>
-      {Words.Navbar.map((li) => (
-        <li key={li}>{li}</li>
-      ))}
-    </ul>
-  );
 
   return (
-    <nav ref={Navelemnt} className="ss">
-      <div className="wrraper">
-        <div className="leftSide">
-          <Svg width={"200px"} />
-          <NavLinks />
+    <>
+      <nav ref={Navelemnt}>
+        <div className="wrraper">
+          <div className="leftSide">
+            <Svg width={"200px"} />
+            <NavLinks />
+          </div>
+
+          <img src={Conenct} alt="Conenct" />
+
+          <GiHamburgerMenu onClick={HanldleMobile} className=" hide " />
         </div>
-        <img src={Conenct} alt="Conenct" />
-      </div>
-    </nav>
+      </nav>
+
+      {/* MobileMenu */}
+      {menu && (
+        <>
+          <MobileMenu setMenu={setMenu} />
+        </>
+      )}
+    </>
   );
 };
 

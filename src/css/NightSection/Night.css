@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&&display=swap");
+.night {
+  padding: 0 4rem;
+}
+.night h1 {
+  display: flex;
+  justify-content: center;
+  font-size: calc(-0.3rem + 8vw);
+  font-family: "Roboto", sans-serif;
+  color: #d46c68;
+}
+.night .night__feed {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.night .night__feed img {
+  max-width: 400px;
+  flex: 1 1;
+}
+.night .night__feed .night__feed_content {
+  flex: 2 2;
+  max-width: 507px;
+  color: #eeeada;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+.night .night__feed .night__feed_content h3 {
+  font-size: 2.8rem;
+  font-family: Impact, sans-serif;
+}
+.night .night__feed .night__feed_content p {
+  margin-bottom: 22px;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: "SF Pro Display", sans-serif;
+}
+.night .night__feed .night__feed_content h6 {
+  color: #d46c68;
+  font-style: italic;
+  font-family: "SF Pro Display", sans-serif;
+}
+.night .night__feed .night__feed_content button {
+  text-decoration: none;
+  box-shadow: -2px -2px 11px rgba(96, 114, 140, 0.8), 3px 6px 10px rgba(1, 5, 11, 0.8);
+  padding: 15px;
+  border-radius: 100px;
+  color: #eeeada;
+  font-weight: 900;
+  font-size: 12px;
+  background: transparent;
+  border: 0;
+  font-family: "SF Pro Display", sans-serif;
+  cursor: pointer;
+  position: relative;
+  width: 13rem;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.night .night__alpha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.night .night__alpha a {
+  text-decoration: none;
+  margin-top: 5rem;
+  opacity: 0.5;
+  transition: 0.8s all linear;
+}
+.night .night__alpha a:hover {
+  opacity: 1;
+}
+.night .night__alpha a span {
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #eeeada;
+  font-family: "SF Pro Display", sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s all linear;
+  border: 13px solid #d46c68;
+}
+.night .night__alpha a span:hover {
+  border: 8px solid #d46c68;
+}
+
+@media screen and (max-width: 980px) {
+  .night {
+    padding: 0 1rem;
+  }
+  .night h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .night .night__feed {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .night .night__feed img {
+    width: 270px;
+    margin-top: 2rem;
+  }
+  .night .night__feed .night__feed_content {
+    max-width: 550px;
+    text-align: center;
+  }
+  .night .night__feed .night__feed_content h3 {
+    font-size: 2rem;
+  }
+}
