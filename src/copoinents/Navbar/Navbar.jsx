@@ -12,6 +12,7 @@ const Navbar = () => {
   const HanldleMobile = () => {
     setMenu(true);
   };
+
   // display Navbar in Scroll
   useEffect(() => {
     const scrollNav = () => {

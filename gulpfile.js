@@ -7,7 +7,7 @@ gulp.task("sass", async () => {
   gulp
     .src("src/copoinents/**/*.scss")
     .pipe(compile())
-    .pipe(cleanCSS())
+    .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("src/css"));
 
   //moveing the scs fils To css Folder
